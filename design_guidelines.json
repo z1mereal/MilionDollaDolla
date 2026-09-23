@@ -1,0 +1,120 @@
+{
+  "brand": {
+    "name": "MINIFIG // ARCHIVE",
+    "tagline": "MONOCHROME COLLECTIBLE ARTICULATED OBJECTS",
+    "aesthetic": "Swiss Architectural Brutalism x High-End Collectible Minifigures",
+    "vibe": "Awwwards Site-of-the-Day, ultra-clean, high tension monochrome, zero rounded edges, razor-sharp precision, museum gallery presentation",
+    "hard_constraint_zero_radius": true,
+    "theme_modes": ["light", "dark"]
+  },
+  "typography": {
+    "fonts": {
+      "display_heading": "Bebas Neue, Outfit, sans-serif (Tight letter spacing, uppercase, dramatic scale)",
+      "editorial_heading": "Syne, Cormorant Garamond, serif (Manifesto and chapter headings)",
+      "body_text": "Outfit, Inter, sans-serif (Clean geometric sans for readability)",
+      "mono_label": "JetBrains Mono, Space Mono, monospace (For specs, coordinates, prices, numbers, manifesto chapter tags)"
+    },
+    "scale": {
+      "h1_hero": "text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-none",
+      "h2_section": "text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-none",
+      "h3_card": "text-xl sm:text-2xl font-semibold uppercase tracking-wide",
+      "body": "text-base sm:text-lg font-light leading-relaxed",
+      "mono_tag": "font-mono text-xs uppercase tracking-[0.25em]"
+    }
+  },
+  "colors": {
+    "light_mode": {
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "card": "#FFFFFF",
+      "card_foreground": "#000000",
+      "border": "#000000",
+      "muted": "#F4F4F4",
+      "muted_foreground": "#666666",
+      "accent": "#000000",
+      "accent_foreground": "#FFFFFF"
+    },
+    "dark_mode": {
+      "background": "#000000",
+      "foreground": "#FFFFFF",
+      "card": "#000000",
+      "card_foreground": "#FFFFFF",
+      "border": "#FFFFFF",
+      "muted": "#121212",
+      "muted_foreground": "#999999",
+      "accent": "#FFFFFF",
+      "accent_foreground": "#000000"
+    },
+    "rule": "STRICT MONOCHROME. NO COLORS EXCEPT PURE WHITE (#FFFFFF), OBSIDIAN BLACK (#000000), AND ARCHITECTURAL GREYS (#111111, #1A1A1A, #E5E5E5, #F5F5F5). All color accents are banned."
+  },
+  "layout_and_grid": {
+    "border_radius": "ZERO RADIUS EVERYWHERE. MUST USE rounded-none ON ALL BUTTONS, CARDS, INPUTS, MODALS, BADGES, AND IMAGES. No exception.",
+    "borders": "1px solid crisp borders (`border border-black dark:border-white`). Grid border exposure strategy.",
+    "spacing": "Generous spacing philosophy (p-6, p-12, p-20, py-24, gap-8 to gap-16). Substantial inner padding inside containers to prevent border text collision.",
+    "bento_grid": "Mode A Tetris grid for products: mix tall col-span-4 row-span-2 hero showcase, col-span-4 standard product cards, and col-span-8 wide feature spotlight frames."
+  },
+  "key_features_and_components": {
+    "kinetic_hero": {
+      "description": "Hero section with masked line-by-line reveal on initial load, floating 3D/parallax figure canvas preview, bold architectural typography, and ticker key-stats.",
+      "animation": "Framer motion line reveal using overflow-hidden wrapper and y: ['100%', '0%'] staggered transitions."
+    },
+    "dark_light_toggle": {
+      "description": "Clean, instantaneous or smooth theme switcher that toggles 'dark' class on <html> element and inverts black/white colors cleanly.",
+      "data_testid": "theme-toggle-btn"
+    },
+    "product_grid_and_spotlight": {
+      "description": "Curated minifigure catalog with clipped photo frames, image cross-fade/zoom hover, spotlight cursor tracker (radial light vignette), category filter bar, search input, and Quick View drawer/modal.",
+      "item_features": ["360 photo indicator", "Edition number (e.g., #001 / 500)", "Stock status badge (SHARP RECTANGLE)", "Add to Cart CTA with hover inversion"]
+    },
+    "manifesto_chapters": {
+      "description": "Numbered editorial manifesto chapters (01. MATERIAL INTEGRITY, 02. ARTICULATED GEOMETRY, 03. MONOCHROME PURISM) in a 3-column sharp grid with heavy vertical dividers and hover reveal text."
+    },
+    "editorial_marquee": {
+      "description": "Slow, high-density editorial ticker strip ('MINIFIG // ARCHIVE — LIMITED EDITION DROPS — 100% ARTICULATED — MONOCHROME SERIES 01 — AVAILABLE WORLDWIDE —') using custom CSS or framer-motion ticker loop."
+    },
+    "cart_drawer": {
+      "description": "Slide-out sharp rectangular cart panel with quantity counter, item removal, price calculation, free shipping threshold bar, and checkout CTA.",
+      "data_testid": "cart-drawer-toggle"
+    },
+    "newsletter_signup": {
+      "description": "High-impact footer/section email input with razor-sharp input field, submit arrow button, success notification state via Sonner toast.",
+      "data_testid": "newsletter-form-input"
+    }
+  },
+  "motion_and_libraries": {
+    "lenis_scroll": "Use Lenis (@studio-freight/react-lenis or lenis) for smooth momentum scrolling.",
+    "framer_motion": "Framer motion for line reveals, scroll-triggered section entrances, modal popups, and hover state transitions.",
+    "hover_effects": "Inversion on hover: background flips from white to black (or vice versa), text flips color, subtle zoom scale (scale-105)."
+  },
+  "image_urls": {
+    "hero_minifigure": "https://images.unsplash.com/photo-1553285326-0a70f57e07ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwyfHxtaW5pZmlndXJlJTIwY29sbGVjdGlibGUlMjBmaWd1cmUlMjB0b3klMjBtb25vY2hyb21lfGVufDB8fHx8MTc5MDEzMDk1MHww&ixlib=rb-4.1.0&q=85",
+    "product_stormtrooper": "https://images.unsplash.com/photo-1553285326-0a70f57e07ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwyfHxtaW5pZmlndXJlJTIwY29sbGVjdGlibGUlMjBmaWd1cmUlMjB0b3klMjBtb25vY2hyb21lfGVufDB8fHx8MTc5MDEzMDk1MHww&ixlib=rb-4.1.0&q=85",
+    "product_lego_fence": "https://images.unsplash.com/photo-1596146828022-82c7afcf3b3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxtaW5pZmlndXJlJTIwY29sbGVjdGlibGUlMjBmaWd1cmUlMjB0b3klMjBtb25vY2hyb21lfGVufDB8fHx8MTc5MDEzMDk1MHww&ixlib=rb-4.1.0&q=85",
+    "product_ninja_black": "https://images.unsplash.com/photo-1596146828740-8a0117f437e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHw0fHxtaW5pZmlndXJlJTIwY29sbGVjdGlibGUlMjBmaWd1cmUlMjB0b3klMjBtb25vY2hyb21lfGVufDB8fHx8MTc5MDEzMDk1MHww&ixlib=rb-4.1.0&q=85",
+    "product_lego_cup": "https://images.unsplash.com/photo-1760907217917-0a6080ce7505?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxtaW5pZmlndXJlJTIwY29sbGVjdGlibGUlMjBmaWd1cmUlMjB0b3klMjBtb25vY2hyb21lfGVufDB8fHx8MTc5MDEzMDk1MHww&ixlib=rb-4.1.0&q=85",
+    "product_army_figurines": "https://images.pexels.com/photos/5257325/pexels-photo-5257325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "product_battle_pose": "https://images.pexels.com/photos/1215476/pexels-photo-1215476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "sculpture_abstract_silver": "https://images.unsplash.com/photo-1786835567881-97c8e5d975a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwYmxhY2slMjB3aGl0ZSUyMHNjdWxwdHVyZSUyMGRlc2lnbiUyMG9iamVjdHxlbnwwfHx8fDE3OTAxMzA5NTB8MA&ixlib=rb-4.1.0&q=85",
+    "sculpture_cube_sphere": "https://images.pexels.com/photos/7828698/pexels-photo-7828698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "sculpture_white_contrast": "https://images.pexels.com/photos/12754744/pexels-photo-12754744.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "instructions_to_main_agent": [
+    "1. Replace default splash in App.js with the full-blown Awwwards MINIFIG // ARCHIVE shop landing page.",
+    "2. MANDATORY ZERO BORDER RADIUS: Ensure every component has class `rounded-none` or CSS `border-radius: 0 !important;`.",
+    "3. Support seamless dark/light mode toggle with theme state saved in localStorage or React state.",
+    "4. Implement the line-by-line kinetic headline reveal using Framer Motion with staggered text wrappers.",
+    "5. Include full cart state drawer, quick view modal, filtering by series/rarity, search bar, interactive spotlight hover effect, and sonner toasts.",
+    "6. Include all required test identifiers (data-testid) on navigation links, product cards, dark mode toggle, cart trigger, quick view buttons, newsletter form, and cart checkout."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy and crisp 1px borders.",
+    "You MUST NOT apply universal transition (e.g. transition: all). Always add specific property transitions.",
+    "You MUST NOT center align the app container (.App { text-align: center; }).",
+    "Never use AI assistant emoji characters (🤖🧠💭💡🔮🎯) for icons — use Lucide or Phosphor React icons.",
+    "Every interaction needs micro-animations — hover states, transitions, line reveals.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "All interactive elements MUST include data-testid attributes in kebab-case."
+  ]
+}
